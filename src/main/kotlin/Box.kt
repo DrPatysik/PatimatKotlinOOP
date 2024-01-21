@@ -10,5 +10,11 @@ class Box(var width: Double, var length: Double, var height: Double) {
         if (thisVolume > boxVolume) {
             println("Our box is bigger")
         }
+        else if(thisVolume < boxVolume) {
+            println("Our box is less")
+        }
+        else{
+            println("Boxes are the same")
+        }
     }
 }
