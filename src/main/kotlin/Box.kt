@@ -17,4 +17,16 @@ class Box(var width: Double, var length: Double, var height: Double) {
             println("Boxes are the same")
         }
     }
+    companion object {
+        fun compare2Boxes(box1:Box,box2:Box){
+            if(box1.volume() > box2.volume()){
+                println("Box #1 is bigger,than box #2")
+            }
+            else if( box1.volume() < box2.volume()){
+                println("Box #2 is bigger,than box #1")
+            }
+            else{ println("Both boxes  are the same")}
+        }
+    }
+
 }
