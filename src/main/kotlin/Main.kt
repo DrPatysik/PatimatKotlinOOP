@@ -19,6 +19,9 @@ fun main(args: Array<String>) {
                         Box(3.6,7.7,8.9))
 
     Box.compareSomeBoxesSecond(Box(1.2,2.2,3.3) ,
-                                Box(1.1,4.4,5.5))
+        Box(1.1,4.4,5.5),
+        Box(3.5,6.7,8.5),
+        Box(3.5,6.7,5.7),
+        Box(1.7,1.8,2.9))
 
 }
