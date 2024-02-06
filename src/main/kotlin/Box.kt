@@ -73,9 +73,15 @@ class Box(var width: Double, var length: Double, var height: Double) {
         }
     }
 
-
-
     fun volumeBiggerTwoBoxes(box: Box):Double {
         return volume1() + volume() + 2.0
+    }
+
+    fun sumSideBoxes(box:Box):String {
+       val w = box.width + width
+       val l = box.length + length
+       val h = box.height + height
+
+        return "New box have width=$w, length=$l, height=$h "
     }
 }
